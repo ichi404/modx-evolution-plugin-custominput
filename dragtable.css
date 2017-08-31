@@ -1,0 +1,51 @@
+@charset "utf-8";
+/*/////////////////////////////////////////////////////////////////////////////////
+/*[2014/2/13]
+ *dragTable.css
+ * 
+ * 
+ * 
+///////////////////////////////////////////////////////////////////////////////*/
+
+/*
+ * dragTable
+ * 
+ --------------------------*/
+.dragtable tr,.dragtable td{
+	user-select: none; /* CSS3 */
+	-moz-user-select: none; /* Firefox */
+	-webkit-user-select: none; /* Safari、Chromeなど */
+	-ms-user-select: none; /* IE10かららしい */
+}
+.dragable td{
+	cursor: move;
+}
+table td.sort{
+	font-size: 2em;
+	line-height: 1;
+	vertical-align: middle;
+	color:#ccc;
+	text-align:center;
+	text-shadow: 0 1px 0 #fff;
+}
+.sort span{
+	cursor: pointer;
+}
+.sort.btn{
+	cursor: default;
+	font-size: 1em;
+	line-height: 1.5;
+	color:#000;
+}
+.sort.btn input{
+	font-size: 1em;
+}
+.drag td{
+	background: #ededed;
+}
+.drag td span{
+	cursor: move;
+}
+.dragtable .fc td{
+	border-top: 4px double #999;
+}
