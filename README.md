@@ -1,4 +1,4 @@
-jqCustominput
+Modx-jqCustominput
 ====
 
 Modxで1つのテンプレート変数に複数の情報を持たせる事ができるプラグインです。
