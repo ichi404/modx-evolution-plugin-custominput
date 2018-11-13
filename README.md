@@ -3,6 +3,7 @@ Modx-jqCustominput
 
 Modxで1つのテンプレート変数に複数の情報を持たせる事ができるプラグインです。  
 jqCustominputだけでは画面に出力出来ません。出力するにはjsonExport [<https://github.com/ichi404/modx-evolution-snippet-jsonexport>]を使用します。
+※Evolution CMSに対応しました。
 
 ## Description
 テンプレート変数を複数のフォームに変換してデータを保存できます。  
@@ -41,6 +42,7 @@ normalと同じ。見出しが違います。faqの管理に向いています�
 ├txt:説明テキスト  
 └alt:altの内容  
 ファイルブラウザが開いて画像を選択できます。スライドショーなど画像管理などに向いています。
+※Evolution CMSでの動作未確認
 
 #### custom
 自由にフォームオブジェクトが作成できます。フォームの設定はCustom Formのタグにdata-inputs="*"として記述します。  
@@ -54,8 +56,9 @@ data-inputs="変数名:見出し:select:option名00/option名01/option名03"
 変数名には選択された項目の順番が、変数名_txtには選択された項目のテキストが保存されます。
 
 ## Install
-/assets/plugins/ディレクトリへこのディレクトリを入れてupdateを行って下さい。  
-※手動でインストールしたい場合は、custominput.install_base.tplをコピペして下さい。  
+このディレクトリを「custominput」にリネームし/assets/plugins/ディレクトリへ入れてupdateを行って下さい。  
+※手動でインストールしたい場合は、custominput.install_base.tplをコピペして下さい。
+※Evolution CMSへインストールする場合、install/assets/plugins/へcustominput.install_base.tplを置いてupdateを行って下さい。
 
 
 ## Licence
@@ -64,4 +67,4 @@ data-inputs="変数名:見出し:select:option名00/option名01/option名03"
 
 ## Author
 
-[ichi404](https://github.com/ichi404)
+[ichi404](https://github.com/ichi404)
